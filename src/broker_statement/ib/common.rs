@@ -14,7 +14,8 @@ use crate::time;
 use crate::types::{Date, DateTime, Decimal};
 use crate::util::{self, DecimalRestrictions};
 
-pub const STOCK_SYMBOL_REGEX: &str = "[A-Z][A-Z0-9]*(?:[ .][A-Z]+)??";
+// pub const STOCK_SYMBOL_REGEX: &str = "[A-Z][A-Z0-9]*(?:[ .][A-Z]+)??";
+pub const STOCK_SYMBOL_REGEX: &str = "[a-zA-Z0-9]+(?:[ .][A-Z]+)??";
 pub const OLD_SYMBOL_SUFFIX: &str = ".OLD";
 
 // IB uses the following identifier types as security ID:
